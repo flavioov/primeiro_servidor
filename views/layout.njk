@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    {% block head %}{% endblock %}
+
+    <link href="/main.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="links" id="header-links">
+        <a href="/not_found.njk" target="_blank">Error 404</a>
+        <a href="mailto:oliveira.v653@gmail.com" target="_blank">Email</a>
+        <a href="tel:+5561995552480">Telefone</a>
+        <a href="/curso.njk">Aulas</a>
+    </div>
+</header>
+
+{% block content %}{% endblock %}
+
+<div class="links" id="footer-links">
+    <a href="404.html" target="_blank">Sobre</a>
+</div>
+
+</body>
+</html>
