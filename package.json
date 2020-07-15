@@ -1,8 +1,8 @@
 {
-  "name": "desafio_fase02_aula02",
+  "name": "primeiro_servidor",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Primeiro servidor web dinâmico com javascript, html, css, nodeJS (nunjucks + express)",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
@@ -12,5 +12,19 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flavioov/primeiro_servidor.git"
+  },
+  "author": "Flávio de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flavioov/primeiro_servidor/issues"
+  },
+  "homepage": "https://github.com/flavioov/primeiro_servidor#readme",
+  "keywords": [
+    "nunjucks",
+    "expess"
+  ]
 }

@@ -1,6 +1,46 @@
 @import "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap";
 
 * {
-    font-family: 'Fira Code', monospace;
+    font-family: 'Fira Code Light', monospace;
     text-decoration: none;
+    background-color: darkslateblue;
+    color: white;
 }
+
+header {
+    margin: 0 20px;
+    margin-top: 10px;
+    border: 2px solid blueviolet;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+}
+header a {
+    padding: 0 20px;
+}
+
+#page-image {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#page-image img{
+    margin: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.logo-title-link {
+    margin: 0 50px;
+    padding-bottom: 50px;
+    text-align: center;
+
+}
+
+.description {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+

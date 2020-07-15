@@ -1,26 +1,39 @@
-{% extends layout.njk %}
+{% extends "layout.njk" %}
+
 
 {% block head %}
-    <title>About</title>
+    <title>Sobre</title>
+{% endblock %}
+
+
+{% block header %}
+    <header>
+        <div class="links-header" id="header-links">
+            {% for link in about.links %}
+                <a href="{{ link.url }}" target={{link.target}}>{{ link.name }}</a>
+            {% endfor %}
+        </div>
+
+    </header>
 {% endblock %}
 
 {% block content %}
-<div id="rocketimage">
-    <img alt="rocketseatLogo" src="rocketSeat.jpg">
 
-</div>
-<div id="logoname">
-    <a href={{about.link}} target="_blank">{{about.title}}</a>
-    <p> {{about.description}}</p>
-</div>
-<div class="tec-list">
-    <ul>
-        <li>JavaScript</li>
-        <li>CSS</li>
-        <li>Node.JS</li>
-        <li>ReactJS</li>
-        <li>React Native</li>
-    </ul>
-</div>
+    <div id="page-image">
+        <img alt="meme_not_enough_space" src="{{about.avatar_url}}">
+    </div>
+    <div class="logo-title-link" id="logo-title">
+        <a href={{about.links.url}} target="_blank">{{about.role}}</a>
+        <p class="description"> {{about.description}}
+    </div>
+    <div class="tec-list">
+        <ul>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>Node.JS</li>
+            <li>ReactJS</li>
+            <li>React Native</li>
+        </ul>
+    </div>
 
 {% endblock %}
